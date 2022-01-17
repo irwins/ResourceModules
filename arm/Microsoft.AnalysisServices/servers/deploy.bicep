@@ -60,6 +60,7 @@ param cuaId string = ''
 @allowed([
   'Engine'
   'Service'
+  '<none>'
 ])
 param logsToEnable array = [
   'Engine'
@@ -69,6 +70,7 @@ param logsToEnable array = [
 @description('Optional. The name of metrics that will be streamed.')
 @allowed([
   'AllMetrics'
+  '<none>'
 ])
 param metricsToEnable array = [
   'AllMetrics'
